@@ -22,18 +22,26 @@ The app we will be adding is the Shotgun Python Console app. Maya has its own Py
 
 This guide utilizes the pipeline configuration we created in the [Editing a Pipeline Configuration](https://github.com/shotgunsoftware/developer.shotgunsoftware.com/blob/getting_started_guide/docs/en/toolkit/toolkit_basics_guides/editing_app_setting.md) guide. If you haven’t completed this guide, you can use an existing pipeline configuration and add the app there.
 
-### Using this document
+### Prerequisites 
  
-To use this guide and install a Toolkit app, the following is required:
+To use this guide and perform an edit on a pipeline configuration, the following is required:
 
 1. An active [Shotgun](https://www.shotgunsoftware.com/signup/) site.
-2. A pipeline configuration for the identified project, or complete the [Getting started with configurations](./advanced_config.md) guide and use the configuration created in that exercise.
-3. A project with at least one asset. You can review how to create an asset for a project in the [Getting started with configurations](./advanced_config.md) guide.
+2. A basic understanding of how a Shotgun site is used to [manage assets](https://support.shotgunsoftware.com/hc/en-us/articles/219031098-Using-the-importer-to-create-and-track-things).
+3. A pipeline configuration for the identified project, or complete the [Getting started with configurations](./advanced_config.md) guide and use the configuration created in that exercise.
 4. [Shotgun Desktop](https://support.shotgunsoftware.com/hc/en-us/articles/115000068574-Integrations-user-guide#Installation%20of%20Desktop) installed on your system.
-5. An active subscription for Maya. Get a 30 day trial of [Maya](https://www.autodesk.com/products/maya/free-trial-dts?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D577C0A84DDF5D35D-50E96EA2052056FE%7CMCORGID%3D6DC7655351E5696B0A490D44%2540AdobeOrg%7CTS%3D1543444689) 
-6. Read and write permissions set appropriately for the filesystem where the Pipeline Configuration is stored.
+5. Familiarity with YAML, Toolkit uses YAML files for configuring Shotgun integration settings.Read and write permissions set appropriately for the filesystem where the Pipeline Configuration is stored.
+6. An active subscription for Maya. Get a 30 day trial of [Maya](https://www.autodesk.com/products/maya/free-trial-dts?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D577C0A84DDF5D35D-50E96EA2052056FE%7CMCORGID%3D6DC7655351E5696B0A490D44%2540AdobeOrg%7CTS%3D1543444689) 
+7. A solid understanding of how to create a [new task](https://support.shotgunsoftware.com/hc/en-us/articles/219031288-Tasks-and-Pipeline-Steps) for a 3D model asset in Shotgun. 
+8. Read and write permissions set appropriately to allow Toolkit to read and write to the production filesystem.
 
-  **NOTE:** This guide is based on the tk-config-default2 pipeline configuration. If your config was modified, the location of files, folders, and blocks of YAML settings may vary from what is described here.
+{% include info title="Note" content="This guide is based on the `tk-config-default2` pipeline configuration. If your config was modified, the location of files, folders, and blocks of YAML settings may vary from what is described here." %}
+
+### Additional Resources
+
+*  [Shotgun Support Site](https://support.shotgunsoftware.com)
+
+*  [App and Engine Configuration Reference](https://support.shotgunsoftware.com/hc/en-us/articles/219039878-App-and-Engine-Configuration-Reference)
 
 ## About Shotgun Toolkit apps
 
